@@ -1,0 +1,13 @@
+{
+    "swagger": {
+        "outputDirectory": "./dist",
+        "entryFile": "./src/server.ts",
+        "basePath": "/v1",
+        "description": "Api for manipulating notifications data, and pushing a notification via web-push service."
+    },
+    "routes": {
+        "basePath": "/v1",
+        "entryFile": "./src/server.ts",
+        "routesDir": "./src"
+    }
+}
