@@ -35,4 +35,13 @@ export class ExampleController extends Controller {
        let resultnumber = requestBody.number1 + requestBody.number2;
        return resultnumber;
    }
+
+       /** This is made to be an example of a new call to show up in staging first!
+    * @param {exampleBadBody} requestBody example post body with number1 and number2.
+    */
+   @Post('exampleNewForStaging')
+   public async exampleNewForStaging(@Body() requestBody: exampleBadBody): Promise<number> {
+       let resultnumber = requestBody.number1 * requestBody.number2;
+       return resultnumber;
+   }
 }
